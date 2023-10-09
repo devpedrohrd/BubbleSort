@@ -17,10 +17,11 @@ int main()
     }
 
     for (i = 0; i < 5 - 1; i++)
-    {
+    { // loop externo : percorre o vetor da esquerda para direita com "i" representando os elemento já ordenados;
         for (j = 0; j < 5 - i - 1; j++)
-        {
-            if (lista[j] > lista[j + 1])
+        { // loop interno : percorre os elementos não ordenados do vetor. "-i" é usado para representar os elementos ja ordenados;
+        
+            if (lista[j] > lista[j + 1]) // compara o elemento atual com o proximo
             {
                 aux = lista[j];
                 lista[j] = lista[j + 1];
